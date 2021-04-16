@@ -1,0 +1,32 @@
+{
+  "scripts": {
+    "dev": "npx cross-env NODE_ENV=development webpack serve --config webpack.dev.js",
+    "build": "npx cross-env NODE_ENV=production webpack --config webpack.prod.js",
+    "copy": "cp -r ./dist ../app-server/flask_webpack_app/static",
+    "publish": "npm run build && npm run copy"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "concurrently": "^6.0.2",
+    "copy-webpack-plugin": "^8.1.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.1",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.4.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-loader": "^5.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "raw-loader": "^4.0.2",
+    "sass-loader": "^11.0.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}

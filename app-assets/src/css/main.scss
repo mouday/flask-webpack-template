@@ -1,0 +1,10 @@
+$color: red;
+
+.box {
+  background-color: grey;
+  color: $color;
+  font-size: 13px;
+  display: flex;
+  box-sizing: border-box;
+  border: 1px solid green;
+}
