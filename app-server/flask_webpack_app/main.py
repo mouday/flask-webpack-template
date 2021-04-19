@@ -2,14 +2,12 @@
 
 from flask import Flask
 from flask_controller import FlaskControllerRegister
-
-from flask_webpack_app.flask_ext import WebpackFlaskStaticDigest
+from flask_static_digest import FlaskStaticDigest
 
 app = Flask(__name__)
 
-
 # flask digest compile
-WebpackFlaskStaticDigest(app)
+FlaskStaticDigest(app)
 
 # route rule
 register = FlaskControllerRegister(app)

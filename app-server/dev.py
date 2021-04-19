@@ -4,7 +4,8 @@ from livereload import Server
 from flask_webpack_app.main import app
 
 # 静态文件热加载
-app.config['FLASK_WEBPACK_DEV_HOST'] = 'http://localhost:8383'
+# app.config['FLASK_WEBPACK_DEV_HOST'] = 'http://localhost:8383'
+app.config['FLASK_STATIC_DIGEST_HOST_URL'] = "http://localhost:8383"
 app.debug = True
 
 if __name__ == '__main__':
